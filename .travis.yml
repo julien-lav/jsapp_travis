@@ -13,8 +13,9 @@ script:
 - echo "Salut"
 - "./node_modules/.bin/jshint"
 - "./node_modules/.bin/retire"
-- "./node_modules/.bin/twly"
 after_script: true
+  - "./node_modules/.bin/twly"
+  if: branch = dev
 deploy:
   provider: heroku
   api_key:
