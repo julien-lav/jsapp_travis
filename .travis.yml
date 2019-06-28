@@ -14,7 +14,9 @@ before_script: true
 
 script:
   - npm test
-  - echo "Salut" 
+  - echo "Salut"
+  - npm run pretest
+  - "./node_modules/.bin/jshint"  
 
 after_script: true
 
