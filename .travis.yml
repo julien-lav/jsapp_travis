@@ -13,9 +13,8 @@ script:
 - echo "Salut"
 - "./node_modules/.bin/jshint"
 - "./node_modules/.bin/retire"
+- if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then "./node_modules/.bin/twly" fi
 after_script: true
-  - "./node_modules/.bin/twly"
-  if: branch = dev
 deploy:
   provider: heroku
   api_key:
