@@ -22,4 +22,4 @@ deploy:
   app: node-travis-test
   on:
     repo: julien-lav/jsapp_travis
-    branch: master
+    branch: dev
