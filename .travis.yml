@@ -15,7 +15,7 @@ before_script: true
 script:
   - npm test
   - echo "Salut"
-  - './node_modules/.bin/jshint ./src/'
+  - './node_modules/.bin/jshint'
   - './node_modules/.bin/retire'
   - './node_modules/.bin/twly'
 
