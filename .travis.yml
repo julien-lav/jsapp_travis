@@ -13,7 +13,7 @@ script:
 - echo "Salut"
 - "./node_modules/.bin/jshint"
 - "./node_modules/.bin/retire"
-- if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then "./node_modules/.bin/twly" fi
+- if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then "./node_modules/.bin/twly"; fi
 after_script: true
 deploy:
   provider: heroku
