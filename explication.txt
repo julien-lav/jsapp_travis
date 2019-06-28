@@ -1,6 +1,6 @@
 
 
-Dans git hub aller sur la branch master, puis settings, puis branches et ajouter une rule
+Dans git hub aller settings choisirla branch master, puis branches et ajouter une rule
 
 - Require status checks to pass before merging
 - Cocher les deux cases
